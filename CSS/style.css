@@ -1,0 +1,848 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 08px;
+  border-bottom: 1px solid #c48b12;
+}
+
+#img_logo {
+  height: 50px; 
+}
+
+#navLinks {
+  display: flex;
+  align-items: center;
+}
+
+#navLinks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navLinks li a {
+  margin-left: 20px; 
+  cursor: pointer;
+  color: #A4791A;
+  font-weight: 750;
+  font-size: 18px;
+}
+
+#navLinks img{
+  padding-left: 15px;
+  height: 40px;
+}
+
+#banner1 {
+  width: 100%;
+}
+
+.carrossel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carrossel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;  
+  box-sizing: border-box;
+  scroll-padding-left: 0;
+  justify-content: flex-start;
+}
+
+.carrossel-item {
+  scroll-snap-align: center;
+  flex: none;
+  background-color: #db9c14;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;  
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.carrossel-container::before {
+  content: "";
+  flex: none;
+  width: 50px;
+}
+
+
+.carrossel-item h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.carrossel-item img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: -20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #000;
+  margin-top: 20px;
+}
+
+#emagreci_img{
+  margin-top: -20px;
+}
+
+#img_intolerancia {
+  margin-right: -8px;
+  width: 210px;
+  height: 210px;
+}
+
+#txt_intolerancia {
+  margin-top: 20px;
+}
+
+#img_esporte{
+  width: 200px;
+  height: 200px;  
+  margin-bottom: 0px;
+}
+
+#img_forca{
+  width: 200px;
+  height: 200px;  
+  
+}
+
+#img_musculo{
+  width: 200px;
+  height: 200px;  
+  margin-left: -30px;
+  margin-bottom: 05px;
+}
+
+#img_saude{
+  margin-bottom: -20px;
+}
+
+#txt_saude{
+  margin-bottom: 20px;
+}
+
+.planos-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  cursor: grab;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+}
+
+.planos-item {
+  flex: none;
+  background-color: #db9c14;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+  user-select: none;
+  scroll-snap-align: start;
+}
+
+.planos-item h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.planos-item img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: -20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.plan {
+  background-color: #db9c14;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  transition:0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan h2{
+  color: #fff;
+}
+
+.plan.pro {
+  background-color: #eea70d;
+  height: 525px; 
+}
+
+.plan:hover {
+  transform: scale(1.05); 
+  background-color: #f0a70a;
+}  
+
+.plan.pro:hover{
+  background-color: #f5a907;
+}
+
+.plan.ultra {
+  background-color: #df9e14;
+  height: 520px;
+}
+
+.plan.ultra:hover{
+  background-color: #f0a70a ;
+}
+
+.plan h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.plan p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.plan li{
+  color: #fff;
+}
+
+.price {
+  font-size: 32px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.price span:last-child {
+  font-size: 16px;
+}
+
+.button {
+  background-color: #a47e1b   ;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 20px;  
+}
+
+.button:hover {
+  background-color: #edc531;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 10px;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.plan .badge {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #ff9900;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.plansUL li{
+  font-weight: 520;
+}
+
+.featured {
+  border: 2px solid #ffd700;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-9%);
+  background-color: #ffd700;
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.testimonials-container {
+      max-width: 1100px;
+      width: 90%; 
+      margin: 0 auto; 
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 15px 8px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .testimonials-container h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .testimonial {
+      background-color: #e9e7e7;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .testimonial p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .testimonial .author {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+/* login Page */
+
+.login-container {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #bd891a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #bd8306;
+}
+
+.cadLinks{
+  color: #a47e1b;
+}
+
+/*Pagina cadastro*/
+
+.signup-container {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d89912;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.signup-container button:hover {
+  background-color: #b88009;
+}
+
+/*EsqSenha Page*/
+
+.reset-container {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reset-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.reset-container p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.reset-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.reset-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d89912;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-container button:hover {
+  background-color: #b88009;
+}
+
+/*Contact Page*/
+
+.contact-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d89912;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+  background-color: #b88009;
+}
+
+/*page dietas*/
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.content-section {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.content-section p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #d89912;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #b88009;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer nav a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+.consulta-botao {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #06bd1e;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.consulta-botao:hover {
+  background-color: #04da21;
+}
+
+.consulta-botao span {
+  visibility: hidden;
+  width: 300px;
+  background-color: #26cf04;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 20px;
+}
+
+.consulta-botao:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.consulta-botao img{
+ width: 35px;
+ height: 35px;
+ filter: invert(90%);
+}
+
+/*page emagrecimento*/
+
+header {
+  text-align: center;
+  background-color: #d8a72a; /* Cor dourada */
+  padding: 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.info-dietas , .plano {
+  margin: 40px 0;
+}
+
+.info-dietas h2, .plano-dietas h2 {
+  color: #d8a72a;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.ul-ema {
+  max-width: 400px;
+  list-style-type: disc;
+  padding-left: 20px;
+  padding: 50px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+
+ul li {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #d8a72a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b5851e;
+}
+
+#h2{
+  margin-bottom: -15px;
+}
+
+#h32{
+  font-size: 20px;
+}
+
+/*Massa page*/
+
+.grid-treinos {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .grid-treinos {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+  }
+  .exercicios-treinos {
+      grid-column: 1 / -1; /* Ocupar linha inteira para centralizar */
+      justify-self: center; /* Centraliza a seção */
+  }
+}
+.info-treinos, .plano-treinos, .exercicios-treinos {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2em;
+  color: #f8f9fa;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #ebdfdf;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.h2-mus {
+  font-size: 1.5em;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.ul-ema {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ul-ema li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.ul-ema li strong {
+  color: #000000;
+}
